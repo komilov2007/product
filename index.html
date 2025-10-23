@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="uz">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>product</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="loader" aria-hidden="true">
+      <div class="spinner" aria-hidden="true"></div>
+    </div>
+
+    <div class="container">
+      <h1>Product</h1>
+
+      <div class="form" role="region" aria-label="Mahsulot boshqaruvi">
+        <input
+          id="productId"
+          type="text"
+          placeholder="ID (yangilash/o‘chirish uchun)"
+        />
+        <input id="name" type="text" placeholder="Mahsulot nomi" />
+        <input id="price" type="number" placeholder="Narxi (so'mda)" />
+        <input id="category" type="text" placeholder="Kategoriya" />
+        <input id="stock" type="number" placeholder="Miqdori (sht)" />
+        <input id="imageUrl" type="text" placeholder="Rasm URL (ixtiyoriy)" />
+        <textarea
+          id="description"
+          placeholder="Mahsulot tavsifi (ixtiyoriy)"
+        ></textarea>
+
+        <div class="controls">
+          <button id="btnCreate" class="btn">➕ Qo'shish</button>
+          <button id="btnUpdate" class="btn ghost">✏️ Yangilash</button>
+          <button id="btnDelete" class="btn ghost">🗑️ O'chirish</button>
+        </div>
+      </div>
+
+      <div class="cards"></div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

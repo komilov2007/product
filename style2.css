@@ -1,0 +1,102 @@
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+}
+body {
+  color: #e5e5e5;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px 0;
+  color: #b794f4;
+  letter-spacing: 1px;
+}
+
+.loader {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 20px;
+  color: #b794f4;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  padding: 40px;
+}
+
+.card {
+  background: #1a1a24;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(183, 148, 244, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 0 20px rgba(183, 148, 244, 0.4);
+}
+
+.card img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  font-size: 16px;
+  color: #e5e5e5;
+  height: 50px;
+  overflow: hidden;
+}
+
+.card p {
+  color: #b794f4;
+  font-weight: bold;
+  margin: 10px 0 0;
+}
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 35px;
+  aspect-ratio: 1;
+  --_g: no-repeat radial-gradient(farthest-side, #000 94%, #0000);
+  background: var(--_g) 0 0, var(--_g) 100% 0, var(--_g) 100% 100%,
+    var(--_g) 0 100%;
+  background-size: 40% 40%;
+  animation: l38 0.5s infinite;
+  position: fixed;
+  left: 49%;
+  top: 30%;
+}
+@keyframes l38 {
+  100% {
+    background-position: 100% 0, 100% 100%, 0 100%, 0 0;
+  }
+}
+.btn {
+  background-color: #b794f4;
+  width: 150px;
+  border: none;
+  border-radius: 10px;
+}
+.btn:hover {
+  background-color: #a474f7;
+  border: 1px solid white;
+  color: white;
+}

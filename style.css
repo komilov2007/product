@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  text-decoration: none;
 }
 body {
   margin: 0;
@@ -15,10 +16,11 @@ body {
   margin: 28px auto;
   padding: 20px;
 }
-.text-h1 {
+h1 {
   text-align: center;
   color: #b794f4;
   margin-bottom: 18px;
+  text-decoration: none;
 }
 
 .loader {

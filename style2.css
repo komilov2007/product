@@ -51,6 +51,12 @@ h1 {
   transform: translateY(-1px);
   box-shadow: 0 0 20px rgba(183, 148, 244, 0.4);
 }
+.yopiq {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+}
 
 .card img {
   width: 120px;

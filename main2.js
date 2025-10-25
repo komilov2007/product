@@ -16,7 +16,7 @@ async function product() {
   try {
     const res = await fetch('https://fakestoreapi.com/products');
     const data = await res.json();
-    await new Promise((resolve) => setTimeout(resolve, 1500));
+    await new Promise((resolve) => setTimeout(resolve, 1900));
     load.style.display = 'none';
 
     data.forEach((item) => {
